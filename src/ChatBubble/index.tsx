@@ -1,4 +1,6 @@
 import * as React from 'react';
+import Emojify from 'react-emojione';
+import Linkify from 'react-linkify';
 import ChatBubbleProps from './interface';
 import styles from './styles';
 
@@ -62,7 +64,11 @@ export default class ChatBubble extends React.Component {
       >
         <div style={chatBubbleStyles}>
           <p style={{ ...styles.p, ...text }}>
-            {m.text}
+            <Emojify>
+              <Linkify>
+                {m.text}
+              </Linkify>
+            </Emojify>
           </p>
           {m.imageUrls && m.imageUrls.map((url, i) => (
             <img key={i} style={styles.img} src={url} />
