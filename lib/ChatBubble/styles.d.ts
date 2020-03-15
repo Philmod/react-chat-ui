@@ -30,6 +30,14 @@ declare const _default: {
         fontSize: number;
         fontWeight: string;
         margin: number;
+        overflowWrap: string;
+        wordWrap: string;
+        MsWordBreak: string;
+        wordBreak: string;
+        MsHyphens: string;
+        MozHyphens: string;
+        WebkitHyphens: string;
+        hyphens: string;
     };
     img: {
         maxWidth: string;

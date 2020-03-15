@@ -77,7 +77,7 @@ export default class ChatBubble extends React.Component {
             </Emojify>
           </p>
           {m.imageUrls && m.imageUrls.map((url, i) => (
-            <img key={i} style={styles.img} src={url} />
+            <img key={i} style={styles.img} src={url} alt={url} />
           ))}
         </div>
       </div>

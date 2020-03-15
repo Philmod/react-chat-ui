@@ -30,6 +30,21 @@ export default {
     fontSize: 16,
     fontWeight: '300',
     margin: 0,
+
+    /* These are technically the same, but use both */
+    overflowWrap: 'break-word',
+    wordWrap: 'break-word',
+
+    MsWordBreak: 'break-all',
+    /* This is the dangerous one in WebKit, as it breaks things wherever */
+    /* Instead use this non-standard one: */
+    wordBreak: 'break-word',
+
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    MsHyphens: 'auto',
+    MozHyphens: 'auto',
+    WebkitHyphens: 'auto',
+    hyphens: 'auto',
   },
   img: {
     maxWidth: '100%',

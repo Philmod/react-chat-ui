@@ -79,7 +79,7 @@ var Chat = function (_React$Component) {
         senderName: 'Evan'
       }), new _lib.Message({
         id: 2,
-        message: ':-) Check &#1F609; this out: https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/1920px-Flag_of_Belgium.svg.png what about this https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Thailand.svg/2560px-Flag_of_Thailand.svg.png',
+        message: ':-) Check this out: https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/1920px-Flag_of_Belgium.svg.png',
         senderName: 'Evan'
       })],
       useCustomBubble: false,
@@ -400,7 +400,7 @@ var ChatBubble = (function (_super) {
                 React.createElement("p", { style: __assign(__assign({}, styles_1.default.p), text) },
                     React.createElement(react_emojione_1.default, null,
                         React.createElement(react_linkify_1.default, { componentDecorator: componentDecorator }, m.text))),
-                m.imageUrls && m.imageUrls.map(function (url, i) { return (React.createElement("img", { key: i, style: styles_1.default.img, src: url })); }))));
+                m.imageUrls && m.imageUrls.map(function (url, i) { return (React.createElement("img", { key: i, style: styles_1.default.img, src: url, alt: url })); }))));
     };
     return ChatBubble;
 }(React.Component));
@@ -441,6 +441,14 @@ exports.default = {
         fontSize: 16,
         fontWeight: '300',
         margin: 0,
+        overflowWrap: 'break-word',
+        wordWrap: 'break-word',
+        MsWordBreak: 'break-all',
+        wordBreak: 'break-word',
+        MsHyphens: 'auto',
+        MozHyphens: 'auto',
+        WebkitHyphens: 'auto',
+        hyphens: 'auto',
     },
     img: {
         maxWidth: '100%',
