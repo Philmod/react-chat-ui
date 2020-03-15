@@ -38,9 +38,7 @@ declare const _default: {
     };
     a: {
         color: string;
-    };
-    'a:hover': {
-        color: string;
+        textDecoration: string;
     };
 };
 export default _default;

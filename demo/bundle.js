@@ -449,9 +449,7 @@ exports.default = {
     },
     a: {
         color: '#FFF',
-    },
-    'a:hover': {
-        color: '#00F',
+        textDecoration: 'underline',
     },
 };
 
