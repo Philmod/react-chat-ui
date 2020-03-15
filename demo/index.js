@@ -43,10 +43,15 @@ class Chat extends React.Component {
     super();
     this.state = {
       messages: [
-        new Message({ id: 'Mark', message: 'Hey guys!', senderName: 'Mark' }),
+        new Message({ id: 'Mark', message: 'Hey guys! :-D', senderName: 'Mark' }),
         new Message({
           id: 2,
-          message: 'Hey! Evan here. react-chat-ui is pretty dooope.',
+          message: 'Hey! Evan here. ;-) react-chat-ui is pretty dooope. https://google.com',
+          senderName: 'Evan',
+        }),
+        new Message({
+          id: 3,
+          message: ':-) Check &#1F609; this out: https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/1920px-Flag_of_Belgium.svg.png what about this https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Thailand.svg/2560px-Flag_of_Thailand.svg.png',
           senderName: 'Evan',
         }),
       ],
