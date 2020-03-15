@@ -71,11 +71,14 @@ var Chat = function (_React$Component) {
 
     _this.state = {
       messages: [new _lib.Message({ id: 'Mark', message: 'Hey guys! :-D', senderName: 'Mark' }), new _lib.Message({
+        id: 0,
+        message: 'Yo. https://google.com'
+      }), new _lib.Message({
         id: 2,
         message: 'Hey! Evan here. ;-) react-chat-ui is pretty dooope. https://google.com',
         senderName: 'Evan'
       }), new _lib.Message({
-        id: 3,
+        id: 2,
         message: ':-) Check &#1F609; this out: https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/1920px-Flag_of_Belgium.svg.png what about this https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Thailand.svg/2560px-Flag_of_Thailand.svg.png',
         senderName: 'Evan'
       })],
@@ -390,12 +393,13 @@ var ChatBubble = (function (_super) {
             ? __assign(__assign(__assign(__assign({}, styles_1.default.chatbubble), bubblesCentered ? {} : styles_1.default.chatbubbleOrientationNormal), chatbubble), userBubble) : __assign(__assign(__assign(__assign(__assign({}, styles_1.default.chatbubble), styles_1.default.recipientChatbubble), bubblesCentered
             ? {}
             : styles_1.default.recipientChatbubbleOrientationNormal), chatbubble), userBubble);
+        var componentDecorator = function (href, text, key) { return (React.createElement("a", { style: styles_1.default.a, href: href, key: key, target: "_blank" }, text)); };
         var m = formatMessage(this.props.message.message);
         return (React.createElement("div", { style: __assign({}, styles_1.default.chatbubbleWrapper) },
             React.createElement("div", { style: chatBubbleStyles },
                 React.createElement("p", { style: __assign(__assign({}, styles_1.default.p), text) },
                     React.createElement(react_emojione_1.default, null,
-                        React.createElement(react_linkify_1.default, null, m.text))),
+                        React.createElement(react_linkify_1.default, { componentDecorator: componentDecorator }, m.text))),
                 m.imageUrls && m.imageUrls.map(function (url, i) { return (React.createElement("img", { key: i, style: styles_1.default.img, src: url })); }))));
     };
     return ChatBubble;
@@ -442,6 +446,12 @@ exports.default = {
         maxWidth: '100%',
         maxHeight: '500px',
         height: 'auto',
+    },
+    a: {
+        color: '#FFF',
+    },
+    'a:hover': {
+        color: '#00F',
     },
 };
 

@@ -36,5 +36,11 @@ declare const _default: {
         maxHeight: string;
         height: string;
     };
+    a: {
+        color: string;
+    };
+    'a:hover': {
+        color: string;
+    };
 };
 export default _default;
