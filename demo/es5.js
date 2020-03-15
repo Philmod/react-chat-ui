@@ -78,7 +78,7 @@ var Chat = function (_React$Component) {
         senderName: 'Evan'
       }), new _lib.Message({
         id: 2,
-        message: ':-) Check &#1F609; this out: https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/1920px-Flag_of_Belgium.svg.png what about this https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Thailand.svg/2560px-Flag_of_Thailand.svg.png',
+        message: ':-) Check this out: https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/1920px-Flag_of_Belgium.svg.png',
         senderName: 'Evan'
       })],
       useCustomBubble: false,
