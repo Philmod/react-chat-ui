@@ -69,9 +69,13 @@ var Chat = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Chat.__proto__ || Object.getPrototypeOf(Chat)).call(this));
 
     _this.state = {
-      messages: [new _lib.Message({ id: 'Mark', message: 'Hey guys!', senderName: 'Mark' }), new _lib.Message({
+      messages: [new _lib.Message({ id: 'Mark', message: 'Hey guys! :-D', senderName: 'Mark' }), new _lib.Message({
         id: 2,
-        message: 'Hey! Evan here. react-chat-ui is pretty dooope.',
+        message: 'Hey! Evan here. ;-) react-chat-ui is pretty dooope. https://google.com',
+        senderName: 'Evan'
+      }), new _lib.Message({
+        id: 3,
+        message: ':-) Check &#1F609; this out: https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/1920px-Flag_of_Belgium.svg.png what about this https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Thailand.svg/2560px-Flag_of_Thailand.svg.png',
         senderName: 'Evan'
       })],
       useCustomBubble: false,

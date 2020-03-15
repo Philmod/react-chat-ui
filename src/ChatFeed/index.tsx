@@ -94,7 +94,7 @@ export default class ChatFeed extends React.Component<ChatFeedInterface> {
 
     const ChatBubble = chatBubble || DefaultChatBubble;
 
-    let group = [];
+    let group: Message[] = [];
 
     const messageNodes = messages.map((message, index) => {
       group.push(message);
