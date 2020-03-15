@@ -31,4 +31,9 @@ export default {
     fontWeight: '300',
     margin: 0,
   },
+  img: {
+    maxWidth: '100%',
+    maxHeight: '500px',
+    height: 'auto',
+  },
 };

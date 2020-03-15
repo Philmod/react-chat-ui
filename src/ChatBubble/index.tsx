@@ -8,6 +8,18 @@ const defaultBubbleStyles = {
   text: {},
 };
 
+function extractImageUrls(s) {
+  var matches = s.match(/(\bhttps?:\/\/\S*\.(?:png|jpg|jpeg|gif))/gi);
+  return matches;
+}
+
+function formatMessage(message) {
+  return {
+    text: message,
+    imageUrls: extractImageUrls(message),
+  };
+}
+
 export default class ChatBubble extends React.Component {
   props;
 
@@ -40,6 +52,8 @@ export default class ChatBubble extends React.Component {
             ...userBubble,
           };
 
+    const m = formatMessage(this.props.message.message)
+
     return (
       <div
         style={{
@@ -47,7 +61,12 @@ export default class ChatBubble extends React.Component {
         }}
       >
         <div style={chatBubbleStyles}>
-          <p style={{ ...styles.p, ...text }}>{this.props.message.message}</p>
+          <p style={{ ...styles.p, ...text }}>
+            {m.text}
+          </p>
+          {m.imageUrls && m.imageUrls.map((url) => (
+            <img style={styles.img} src={url} />
+          ))}
         </div>
       </div>
     );
