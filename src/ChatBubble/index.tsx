@@ -64,8 +64,8 @@ export default class ChatBubble extends React.Component {
           <p style={{ ...styles.p, ...text }}>
             {m.text}
           </p>
-          {m.imageUrls && m.imageUrls.map((url) => (
-            <img style={styles.img} src={url} />
+          {m.imageUrls && m.imageUrls.map((url, i) => (
+            <img key={i} style={styles.img} src={url} />
           ))}
         </div>
       </div>
