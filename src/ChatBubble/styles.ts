@@ -36,4 +36,10 @@ export default {
     maxHeight: '500px',
     height: 'auto',
   },
+  a: {
+    color: '#FFF',
+  },
+  'a:hover': {
+    color: '#00F',
+  },
 };

@@ -54,6 +54,12 @@ export default class ChatBubble extends React.Component {
             ...chatbubble,
           };
 
+    const componentDecorator = (href, text, key) => (
+      <a style={styles.a} href={href} key={key} target="_blank">
+        {text}
+      </a>
+    )
+
     const m = formatMessage(this.props.message.message)
 
     return (
@@ -65,7 +71,7 @@ export default class ChatBubble extends React.Component {
         <div style={chatBubbleStyles}>
           <p style={{ ...styles.p, ...text }}>
             <Emojify>
-              <Linkify>
+              <Linkify componentDecorator={componentDecorator}>
                 {m.text}
               </Linkify>
             </Emojify>
