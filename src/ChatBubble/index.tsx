@@ -50,8 +50,8 @@ export default class ChatBubble extends React.Component {
             ...bubblesCentered
               ? {}
               : styles.recipientChatbubbleOrientationNormal,
-            ...chatbubble,
             ...userBubble,
+            ...chatbubble,
           };
 
     const componentDecorator = (href, text, key) => (
