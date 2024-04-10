@@ -3,12 +3,12 @@ declare const _default: {
         marginTop: number;
         marginBottom: number;
         overflow: string;
-        position: string;
+        position: "relative";
     };
     bubbleGroupHeader: {
         margin: number;
         fontSize: number;
-        fontWeight: string;
+        fontWeight: number;
         color: string;
     };
 };

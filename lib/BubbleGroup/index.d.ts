@@ -4,6 +4,6 @@ import Message from '../Message';
 export default class BubbleGroup extends React.Component {
     props: any;
     constructor(props: BubbleGroupInterface);
-    renderGroup(messages: [Message], id: number): any;
-    render(): any;
+    renderGroup(messages: [Message], id: number): React.JSX.Element;
+    render(): React.JSX.Element;
 }

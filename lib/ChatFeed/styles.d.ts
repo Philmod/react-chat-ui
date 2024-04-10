@@ -1,7 +1,7 @@
 declare const _default: {
     chatPanel: {
         display: string;
-        flexDirection: string;
+        flexDirection: "column";
         flex: number;
         overflow: string;
     };
@@ -12,7 +12,7 @@ declare const _default: {
         marginTop: number;
         marginBottom: number;
         overflow: string;
-        position: string;
+        position: "relative";
     };
     img: {
         borderRadius: number;
