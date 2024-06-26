@@ -22,13 +22,13 @@
   "author": "Brandon Mowat",
   "license": "ISC",
   "dependencies": {
-    "prop-types": "^15.5.10",
-    "react-emojione": "^5.0.1",
+    "prop-types": "*",
+    "react-emojione": "*",
     "react-linkify": "^1.0.0-alpha"
   },
   "peerDependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react": "*",
+    "react-dom": "*"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -37,8 +37,8 @@
     "babel-preset-react": "^6.1.18",
     "babel-preset-stage-0": "^6.1.18",
     "browserify": "^14.4.0",
-    "typescript": "^3.2.4",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "typescript": "*",
+    "react": "*",
+    "react-dom": "*"
   }
 }
